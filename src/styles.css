@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 210px;
+}
+
+.cell {
+  height: 70px;
+  width: 70px;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: transparent;
+}
+
+.cell:hover {
+  background: #ddd;
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  &:hover {
+    background: transparent;
+  }
+}
